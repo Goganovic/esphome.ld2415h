@@ -6,7 +6,7 @@
 namespace esphome {
 namespace ld2415h {
 
-class SpeedSensor : public Component, sensor::Sensor {
+class SpeedSensor : public Component, public sensor::Sensor {
  public:
   void dump_config() override;
   void set_speed_sensor(sensor::Sensor *sensor) { this->speed_sensor_ = sensor; }
